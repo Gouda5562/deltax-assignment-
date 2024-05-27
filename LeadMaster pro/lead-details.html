@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadMaster Pro - Lead Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html">LeadMaster Pro</a>
+        <a href="lead-listing.html">Lead Listing</a>
+    </nav>
+    <div class="container">
+        <h2>Lead Details</h2>
+        <div class="lead-details">
+            <h3 id="leadName">John Doe</h3>
+            <p><strong>Contact:</strong> <span id="leadContact">123-456-7890</span></p>
+            <p><strong>Status:</strong> <span id="leadStatus">New</span></p>
+            <h4>Notes</h4>
+            <ul id="notesList">
+                <!-- Notes will be dynamically inserted here -->
+            </ul>
+            <button onclick="addNote()">Add Note</button>
+            <button onclick="editLead()">Edit Lead</button>
+        </div>
+        <button onclick="backToLeads()">Back to Leads</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

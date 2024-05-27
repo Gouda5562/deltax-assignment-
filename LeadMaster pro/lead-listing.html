@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadMaster Pro - Lead Listing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html">LeadMaster Pro</a>
+        <a href="lead-listing.html">Lead Listing</a>
+    </nav>
+    <div class="container">
+        <h2>Lead Listing</h2>
+        <div class="lead-controls">
+            <input type="text" id="search" placeholder="Search leads...">
+            <button onclick="addNewLead()">Add New Lead</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Lead Name</th>
+                    <th>Contact</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="leadTableBody">
+                <!-- Leads will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

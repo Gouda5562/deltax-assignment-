@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadMaster Pro - Lead Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html">LeadMaster Pro</a>
+        <a href="lead-listing.html">Lead Listing</a>
+    </nav>
+    <div class="container">
+        <h2>Manage Lead</h2>
+        <form id="leadForm">
+            <div class="form-group">
+                <label for="leadName">Name</label>
+                <input type="text" id="leadName" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="leadContact">Contact</label>
+                <input type="text" id="leadContact" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="leadStatus">Status</label>
+                <select id="leadStatus" class="form-control">
+                    <option>New</option>
+                    <option>Active</option>
+                    <option>Closed</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="leadNote">Add Note/Interaction</label>
+                <textarea id="leadNote" class="form-control" rows="3"></textarea>
+            </div>
+            <button type="button" onclick="saveLead()">Save Changes</button>
+            <button type="button" onclick="cancelEdit()">Cancel</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
